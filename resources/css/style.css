@@ -188,6 +188,7 @@ ul.nav li a:hover {
 	-ms-flex-align: center !important;
 	align-items: center !important;
 	text-align: center !important;
+	justify-content: center;
 	vertical-align: middle;
 }
 
@@ -329,17 +330,12 @@ p {
 .img-notfluid {
 	max-width: 100%;
 	height: auto;
-	display:table-cell;
-	horizontal-align: middle;
-	vertical-align: middle;
 }
 .img-domain {
 	max-height: 8vw;
 	width: auto;
 }
 img {
-	vertical-align: middle;
-	horizontal-align: middle;
 	border-style: none;
 	align-items: center;
 }
@@ -362,6 +358,7 @@ img {
 }
 .img-container2 {
 	max-width: 40vw;
+	min-width: 35vw;
 }
 .img-container {
 	padding: 0;
@@ -647,9 +644,7 @@ input.invalid, textarea.invalid{
 input.valid, textarea.valid{
     border-bottom: 3px solid green;
 }
-.order-lg-2, .order-lg-1 {
-	display: table;
-}
+
 /* Media Queries */
 @media only screen and (max-width: 390px) {
 	.hidden-small {
@@ -658,6 +653,14 @@ input.valid, textarea.valid{
 }
 @media only screen and (max-width: 480px) {
 
+	h2.styling {
+		margin-top: 0;
+	}
+	.align-center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	.navbar-nav > li > a  {
 		color:white;
 		font-size: 14px;
@@ -776,6 +779,11 @@ input.valid, textarea.valid{
 
 
 @media only screen and (max-width: 768px){
+	.align-center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 	.navbar-nav > li > a  {
 		color:white;
@@ -872,10 +880,10 @@ input.valid, textarea.valid{
 .img-container2 {
 	max-width: 65vw;
 	vertical-align: middle;
-	display:table-cell;
 }
 }
 @media only screen and (min-width: 768px) and (max-width:920px){
+
 	.details > h2 {
 		margin-top: 0 !important;
 	}
@@ -891,7 +899,11 @@ input.valid, textarea.valid{
 		display: none;
 	}
 .main p {
+	margin-top: 0;
 	font-size: 14px;
+}
+h2.styling {
+	margin-top: 0;
 }
 }
 
