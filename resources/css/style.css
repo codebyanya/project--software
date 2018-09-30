@@ -61,7 +61,7 @@ body {
 	margin-bottom: auto;
 }
 .navbar-header img {
-	min-height: 45px;
+	min-height: 35px;
 	color: white;
 	padding-top:auto;
 	padding-bottom: auto;
@@ -188,6 +188,7 @@ ul.nav li a:hover {
 	-ms-flex-align: center !important;
 	align-items: center !important;
 	text-align: center !important;
+	vertical-align: middle;
 }
 
 .details{
@@ -328,6 +329,9 @@ p {
 .img-notfluid {
 	max-width: 100%;
 	height: auto;
+	display:table-cell;
+	horizontal-align: middle;
+	vertical-align: middle;
 }
 .img-domain {
 	max-height: 8vw;
@@ -643,6 +647,9 @@ input.invalid, textarea.invalid{
 input.valid, textarea.valid{
     border-bottom: 3px solid green;
 }
+.order-lg-2, .order-lg-1 {
+	display: table;
+}
 /* Media Queries */
 @media only screen and (max-width: 390px) {
 	.hidden-small {
@@ -668,7 +675,7 @@ input.valid, textarea.valid{
 		margin-top: 0;
 	}
 	.main p {
-		font-size: 16px;
+		font-size: 14px;
 		margin-bottom: 3vh;
 	}
 	.img-container1, .details, .details p {
@@ -712,7 +719,14 @@ input.valid, textarea.valid{
 	}
 
 	.img-container {
-		padding:0;
+		padding:.5rem .1rem;
+	}
+	.btn.btn-sm {
+		padding: .3rem 0rem;
+	}
+	.btn.btn-sm h2{
+		font-size: 20px;
+		font-weight: 500;
 	}
 	#programs {
 		padding: 0 10px;
@@ -804,7 +818,10 @@ input.valid, textarea.valid{
 		width: 100%;
 		height: auto;
 	}
-
+	.btn.btn-sm h2{
+		font-size: 22px;
+		font-weight: 500;
+	}
 	.main {
 		margin:0;
 		padding:10px 0px 0px 30px;
@@ -852,7 +869,11 @@ input.valid, textarea.valid{
 	.btn-line {
 		margin-top: 1rem;
 	}
-
+.img-container2 {
+	max-width: 65vw;
+	vertical-align: middle;
+	display:table-cell;
+}
 }
 @media only screen and (min-width: 768px) and (max-width:920px){
 	.details > h2 {
@@ -869,7 +890,9 @@ input.valid, textarea.valid{
 	.hidden-xs-cf {
 		display: none;
 	}
-
+.main p {
+	font-size: 14px;
+}
 }
 
 
