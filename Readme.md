@@ -1,8 +1,8 @@
-# Awww.Software
+# .Software
 
 Setup
 * no additional setup required
-* visit the page at https://codebyanya.github.io/project-awww-software
+* visit the page at //.
 * alternatively download the .zip folder and run index.html file
 
 
